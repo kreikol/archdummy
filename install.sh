@@ -33,3 +33,8 @@ ln -sf "$DOTFILES/zsh/external" "$XDG_CONFIG_HOME/zsh"
 
 mkdir -p "$XDG_DATA_HOME"
 cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
+
+# Notifications: dunst
+
+mkdir -p "$XDG_DATA_HOME/dunst"
+cp -rf "$DOTFILES/dunst/dunstrc" "$XDG_DATA_HOME/dunst/dunstrc"

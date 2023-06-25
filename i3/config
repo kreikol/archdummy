@@ -23,6 +23,12 @@ font pango:Inconcolata NF 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# Launch Dunst service
+exec --no-startup-id dunst
+# dunst keyboard shortcuts
+bindsym $mod+x exec dunstctl close-all
+bindsym Ctrl+BackSpace exec dunstctl history-pop
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
