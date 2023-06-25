@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 12
+font pango:Inconcolata NF 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -308,3 +308,8 @@ for_window [instance="htop_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show
 exec urxvtc -name htop_scratchpad -e htop
 
+# Mouseless book
+#for_window [instance="mouseless_book"] move to scratchpad, border none
+#bindsym $mod+Shift+b [instance="mouseless_book"] scratchpad show
+#exec_always zathura $HOME/mouseless/book.pdf -name mouseless_book
+bindsym $mod+Shift+b exec zathura $HOME/mouseless/book.pdf
