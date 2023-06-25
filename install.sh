@@ -16,7 +16,13 @@ rm -rf "$HOME/.config/i3"
 ln -s "$HOME/dotfiles/i3" "$HOME/.config/i3"
 
 # resolucion de pantalla
-ln -s "$HOME/dotfiles/screenlayout" "$HOME/.screenlayout"
+ln -sf "$HOME/dotfiles/screenlayout" "$HOME/.screenlayout"
 
+# ZSH
 
-
+mkdir -p "$HOME/.config/zsh"
+ln -sf "$HOME/dotfiles/zsh/.zshenv" "$HOME"
+ln -sf "$HOME/dotfiles/zsh/.zshrc" "$HOME/.config/zsh"
+ln -sf "$HOME/dotfiles/zsh/aliases" "$HOME/.config/zsh/aliases"
+rm -rf "$HOME/.config/zsh/external"
+ln -sf "$HOME/dotfiles/zsh/external" "$HOME/.config/zsh"
