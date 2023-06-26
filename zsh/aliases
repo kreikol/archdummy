@@ -5,5 +5,7 @@ alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
 
+alias v='nvim'
+
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
