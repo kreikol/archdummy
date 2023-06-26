@@ -38,3 +38,7 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 
 mkdir -p "$XDG_DATA_HOME/dunst"
 cp -rf "$DOTFILES/dunst/dunstrc" "$XDG_DATA_HOME/dunst/dunstrc"
+
+# UI style GTK3
+rm -rf "$XDG_CONFIG_HOME/gtk-3.0"
+ln -s "$DOTFILES/gtk-3.0" "$XDG_CONFIG_HOME/gtk-3.0"
